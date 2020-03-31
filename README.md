@@ -3,7 +3,7 @@
 Server side implementation of auth in Node based Express app.
 
 # How it works
-Read [here](nasirkhan.dev)
+Read [here](https://nasirkhan.dev/blog/auth-in-mevn-part-1)
 
 ## Prerequisites
 In order to get up & running, make sure you have following things installed
