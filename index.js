@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import bodyParser from 'body-parser';
 import { signup, signin } from './controllers/Auth';
 import { getToken, verifyToken } from './utils/token';
@@ -8,6 +9,7 @@ import { allowIfLoggedIn } from './middlewares/loggedIn';
 const PORT = process.env.PORT || 3000
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use(async (req, res, next) => {

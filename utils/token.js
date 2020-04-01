@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken';
 
 let jwtSecret = process.env.TOKEN_SECRET || 'supercsecret';
 let refreshTokenSecret = process.env.REFRESH_TOKEN_SECRET || 'superrsecret';
